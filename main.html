@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Limelight|Rye|Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/stylemain.css">
+
+    <title>MIKE'S MOVIE SEARCH</title>
+</head>
+
+
+<body class="source-image">
+
+    <h1 class="neon"> Mike's Movie Search</h1>
+    <div id="container">
+        <br>
+        <!-- This form will be where users input data about the movies -->
+        <form id="movie-form" action="display.html" method="GET">
+            <label for="movie-input" name="serial number"id="input">Search for a TV Show Or Movie</label>
+            <input type="text" id="movie-input">
+            <!-- This button will trigger our AJAX call -->
+            <input id="find-movie" type="submit" value="Search">
+            <input id="clear-movies" type="submit" value="clear">
+        </form>
+        <br>
+        <!-- We'll be dumping our movie contents in here -->
+        <div class="container ellips">
+            <div id="movie-view">
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <footer id="footer"> &copy;BootCampSpot: Group C </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/javascript/config.js"></script>
+
+</body>
+
+
+</html>

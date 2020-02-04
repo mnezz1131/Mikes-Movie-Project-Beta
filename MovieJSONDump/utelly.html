@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mike's Movie Search</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>MIKE'S Movie Search</h1>
+
+    <!-- This form will be where users input data about the movies -->
+    <form id="movie-form">
+      <label for="movie-input">Search for a TV Show Or Movie</label>
+      <input type="text" id="movie-input"><br>
+
+      <!-- This button will trigger our AJAX call -->
+      <input id="find-movie" type="submit" value="Search">
+    </form>
+
+    <!-- We'll be dumping our JSON contents in here -->
+    <div id="movie-view"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      // This .on("click") function will trigger the AJAX Call
+      $("#find-movie").on("click", function(event) {
+
+        // event.preventDefault() can be used to prevent an event's default behavior.
+        // Here, it prevents the submit button from trying to submit a form when clicked
+        event.preventDefault();
+
+        // Here we grab the text from the input box
+        var movie = $("#movie-input").val();
+
+ //=================================================================================================================================
+       const url = 'https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup?term='+movie+'&country=us'
+      
+        const options = {
+        method: 'GET',
+        headers: {
+          "x-rapidapi-host": "utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com",
+	    "x-rapidapi-key": "dfb87b0ec6msh548e75d6f762a4bp1dc2f1jsn322c78d86502"
+        },
+}
+
+         fetch(url, options)
+        .then((response) => {
+        return response.json();
+    })
+        .then((myJson) => {
+        console.log(myJson);
+        $("#movie-view").text(JSON.stringify(myJson));
+  });
+  
+
+//================================================================================================================================     
+      });
+    </script>
+  </div>
+</body>
+
+</html>

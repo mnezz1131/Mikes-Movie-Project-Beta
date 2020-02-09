@@ -109,14 +109,21 @@ $(document).ready(function () {
                                     localStorage.setItem("storageName", movieName);
 
                                 });
-                        });
-                        $('#clear-movies').on("click", function (event) {
-                            event.preventDefault();
-                            //Geting the value of text entered in  the input box 
-                            var movie = $("#movie-input").val("");
-                           // $(".container.ellips").empty():
+
+                                $('#clear-movies').on("click", function (event) {
+                                   event.preventDefault();
+                                    //Geting the value of text entered in  the input box 
+                                    var movie = $("#movie-input").val("");
+                                   
+                                   
+                                    $(".container.ellips").empty();
+                                    location.reload();
+                                });
+
+
 
                         });
+                        
                 //================================================================================================================================    
                 //End tag for Document.Ready
             });

@@ -16,66 +16,67 @@
 <body>
     <div id="container1">
         <h1 class="neon">MIKE'S MOVIE SEARCH</h1>
-        <p1 class="search"> The movie you searched for:<span class="result"></span></p1>
+        <p1 class="search"> The Movie You Searched For:<span class="result"></span></p1>
     </div>
     <!--IMDB Infomration Movie going  here-->
     <div class="containeri">
         <div id="movies-view">
         </div>
     </div>
-   
 
-   
 
-        <!--Movie Information going  here-->
-        <div class="container">    
-            <div id="m-view">
-            </div>
 
-            <hr class="line">
-            
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card mb-4">
-                      <!--  <div class="card-header alert-dark"></div>-->
-                        <div class="card-body">
-                            <table class="table table-sm table-hover table-striped" id='myTable'>
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Rating</th>
-                                        <th scope="col">Released</th>
-                                        <th scope="col">Runtime</th>
-                                        <th scope="col">Genre</th>
-                                        <th scope="col">Actors</th>
-                                        <th scope="col">IMDB</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="records">
-                                </tbody>
-                            </table>
-                        </div>
+
+    <!--Movie Information going  here-->
+    <div class="container-t">
+        <div id="m-view">
+        </div>
+
+        <hr class="line">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <!--  <div class="card-header alert-dark"></div>-->
+                    <div class="card-body">
+                        <table class="table table-sm table-hover table-striped" id='myTable'>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Rating</th>
+                                    <th scope="col">Released</th>
+                                    <th scope="col">Runtime</th>
+                                    <th scope="col">Genre</th>
+                                    <th scope="col">Actors</th>
+                                    <th scope="col">IMDB</th>
+                                </tr>
+                            </thead>
+                            <tbody id="records">
+                            </tbody>
+                        </table>
                     </div>
+                </div>
 
-                    <!---Streaming Services go here-->
-                    <div class="container">
-                        <div id="stream-view">
-                            <p1 class="search">The Movie Is Streaming Here:</p1>
-                        </div>
+                <!---Streaming Services go here-->
+                <div class="container-s">
+                    <div id="stream-view">
+                        <p1 class="search">The Movie Is Streaming Here - Click Provider to follow Link:</p1>
+                       
                     </div>
-                    <br>
-                    <!---------------------------------------------You Tube Trailer goes here--------------------------------------------------------------------------->
-                    <div class="container" id="youTube">
-                        <!-- We'll be dumping our YouTube Trailer in here -->
-                        <div id="youTube-view"></div>
-                        <iframe src=""></iframe>
-                        <h3 class="search">Video Title</h3>
-                        <!--   <p class="description">Video Description<p>-->
-                        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-                            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-                        </script>
-                        <script type="text/javascript"></script>
-                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                        <script src="./assets/javascript/app.js"></script>
+                </div>
+                <br>
+                <!---------------------------------------------You Tube Trailer goes here--------------------------------------------------------------------------->
+                <div class="container-y" id="youTube">
+                    <!-- We'll be dumping our YouTube Trailer in here -->
+                    <div id="youTube-view"></div>
+                    <iframe src=""></iframe>
+                    <h3 class="search">Video Title</h3>
+                    <!--   <p class="description">Video Description<p>-->
+                    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+                    </script>
+                    <script type="text/javascript"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="./assets/javascript/app.js"></script>
 </body>
 
 </html>

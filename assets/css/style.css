@@ -1,52 +1,52 @@
-body { 
-    background: url(../Images/Capture.JPG) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-  }
+body {
+  background: url(../Images/Capture.JPG) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
 
-  #container {
+#container {
 
-    display: flex;
-    flex-direction: column;
-   /* min-height: 100vh;*/
-  }
-  
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh;*/
+}
+
 
 h1 {
-    /* font-family: 'Rye', cursive;*/
-    font-family: 'Limelight', cursive;
-    /*font-family: 'Bungee Shade', cursive;*/
-    position: relative;
-    text-transform: uppercase;
-    font-size: 120px;
-    letter-spacing: 4px;
-    overflow: hidden;
-    background: linear-gradient(90deg, #000, #fff, #000);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: animate 4s linear infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 01, 01, 0.1);
+  /* font-family: 'Rye', cursive;*/
+  font-family: 'Limelight', cursive;
+  /*font-family: 'Bungee Shade', cursive;*/
+  position: relative;
+  text-transform: uppercase;
+  font-size: 120px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 01, 01, 0.1);
 }
 
 
 @keyframes animate {
-    0% {
-        background-position: -500%;
-    }
+  0% {
+    background-position: -500%;
+  }
 
-    100% {
-        background-position: 500%;
-    }
+  100% {
+    background-position: 500%;
+  }
 
 }
 
@@ -60,14 +60,14 @@ h1 {
     1px 1px 0 #000;
   color: red;
   margin: auto 0;
-position: relative;
-background: transparent;
-border-color: transparent;
+  position: relative;
+  background: transparent;
+  border-color: transparent;
 }
 
-.image{
-position: absolute;
-top:630px;
+.image {
+  position: absolute;
+  top: 630px;
 
 }
 
@@ -76,26 +76,29 @@ top:630px;
   color: goldenrod;
   padding-top: 10px;
   margin-top: auto;
-  
+
 }
 
-@media screen and (max-width: 640px){
-  
-
+@media screen and (max-width: 640px) {
   body {
-    background: url(../Images/media-background.jpeg);
-    background-size: cover;
+    background: url(../Images/films-and-film-reel-shine-footage-024725276_prevstill.jpeg);
     background-repeat: no-repeat;
     overflow: auto;
+    width: 90%;
+    
 
-  }
-
-  h1 {
-    display: none;
   }
 
   .enter {
-    margin: 20px;
+    font-size: 50px;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 5px;
   }
+
+  h1 {
+    font-size: 60px;
+  }
+
 
 }
